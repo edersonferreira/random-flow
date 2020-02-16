@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap');
+
+/*Cor base é #CC9B35*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', sans-serif;
+}
+p, h1, h2, h3, h4, h5, h6{
+    color: whitesmoke;
+}
+.title{
+    font-size: 4ch;
+}
+body{
+    background-color: #121212;
+}
+nav{
+    flex-direction: row;
+    width: 100%;
+    font-size: 2.3ch;
+    background-color: #0c0c0c;
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    justify-content: space-around;
+}
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 2rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 21px;
+}
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 400px){
+    .toggle-button{
+        display: flex;
+    }
+    .navlinks.active{
+        display: none
+    }
+    nav{
+        font-size: 2ch;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+    }
+    nav.active{
+        display: flex;
+    }
+    li{
+        margin-bottom: 8px;
+        margin-right: 63vw;
+    }
+}
+
+ul{
+    margin-left: 50%;
+}
+.nodecoration{
+    text-decoration: none;   
+}
+a{
+    color: #D9C52E;
+    text-decoration: none;
+    transition: 0.4s;
+}
+a:hover{
+    color: #E39830;
+}
+li{
+    color: black;
+    background-color: #D9C52E;
+    border-style: solid;
+    border-color: #00000000;
+    display: inline-block;
+    padding: 0px 20px;
+    transition: 0.4s;
+    border-radius: 40px;
+    list-style: none;
+}
+li:hover{
+    background-color: #D9782E;
+}
+.content{
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 15vh;
+}
+.buttonFlow{
+    border-style: solid;
+    font-size: 2.5ch;
+    font-weight: bold;
+    padding: 2.5%;
+    border-radius: 10px;
+    background-color: #E39830;
+    border-color: #E39830;
+    transition: 0.4s;
+    margin-bottom: 10vh;
+}
+.buttonFlow:hover{
+    transform: scale(1.2);
+    background-color: #D9782E;
+    border-color: #D9782E;
+}
+.videobox{
+    margin-top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 560px;
+    height: 315px;
+}
+.authorbox{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+}
+.imageauthor{
+    width: 40%;
+    height: 40%;
+}
+.decoration{
+    color: #025D96;
+    transition: 0.4s;
+}
