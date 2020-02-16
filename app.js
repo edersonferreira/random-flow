@@ -21,7 +21,6 @@ function random(){
     }
 
     $.getJSON(URL, options, function(data){
-        if (videobox.parentNode)
 
         video.width = '560'
         video.height = '315'
