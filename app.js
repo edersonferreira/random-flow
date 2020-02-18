@@ -9,7 +9,7 @@ toggleButton.addEventListener('click', ()=>{
 })
 
 function random(){
-    const key = 'AIzaSyCMUCzezBZv83nGV7OJ9zWWeXjRlwYMgrM'
+    const key = 'key'
     const playlistId = 'UU4ncvgh5hFr5O83MH7-jRJg'
     const URL = 'https://www.googleapis.com/youtube/v3/playlistItems'
 
